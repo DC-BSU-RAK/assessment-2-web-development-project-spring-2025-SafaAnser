@@ -1,0 +1,316 @@
+/*style for the whole body*/
+body{ 
+    font-family:sans-serif; /*sets sans-serif as the default font*/
+    font-size: 1rem; /*sets the base font size to 1rem*/
+    padding: 0; /*removes default padding*/
+    margin: 0;  /*removes default margin*/
+} 
+
+/*custom class for large headings*/
+.h{ 
+    color: rgb(225, 225, 225); /*sets text color*/
+    font-family: 'Orbitron', sans-serif; /*uses Orbitron font*/
+    font-size: 3rem; /*sets large font size*/
+} 
+
+/*custom class for subheadings*/
+.h2{ 
+    color: rgb(225, 225, 225); /*sets text color*/
+    font-family: 'Orbitron', sans-serif; /*uses Orbitron font*/
+    font-size: 1.5rem; /*sets subheading size*/
+} 
+
+ /*custom class for paragraphs*/
+.p{
+    color: rgb(173, 173, 173); /*sets text color*/
+    font-weight:200; /*sets light font weight*/
+    font-size: 1.2rem; /*increases paragraph font size*/
+    font-family: 'Courier New', Courier, monospace; /*uses monospace font*/
+} 
+
+/*style for header section*/
+header{ 
+    display: flex; /*uses flexbox layout*/
+    justify-content: space-between; /*spaces items across header*/
+    align-items: center; /*vertically centers items*/
+    background-color: rgb(255, 255, 255); /*sets background*/
+    background-size: 15rem; /*sets background image size if applied*/
+    min-height: 2rem; /*sets minimum height*/
+    padding: 1rem 2rem; /*adds padding to header*/
+} 
+
+/*style for logo image*/
+.logo_img{ 
+    margin: -1.5rem; /*shifts logo upward*/
+} 
+
+/*styles list items inside nav*/
+nav ul li{ 
+    min-width: 4rem; /*ensures minimum width*/
+    text-align: center; /*centers text*/
+} 
+
+/*styles unordered list in nav*/
+nav ul{ 
+    list-style: none; /*removes bullet points*/
+    display: flex; /*makes list horizontal*/
+    gap: 1.5rem;  /*adds space between items*/
+    padding: 0; /*removes default padding*/
+    margin:0; /*removes default margin*/
+} 
+
+/*style for navigation links*/
+nav a{ 
+    text-decoration: none; /*removes underline*/
+    color: rgb(102, 102, 102); /*sets link color*/
+    transition: color 0.3s; /*adds hover animation*/
+} 
+
+/*styles hovered or active nav links*/
+nav a:hover,nav a.active{ 
+    color: rgb(34, 34, 34); /*darkens link on hover*/
+    font-weight: 600; /*bolds link text*/
+} 
+
+/*class for dark section background*/
+.sec_bg{ 
+    background: linear-gradient(rgb(0, 0, 0),rgb(12, 12, 12),rgb(45, 45, 45)); /*adds gradient background*/
+} 
+
+/*section for overview content*/
+#ov{
+    padding: 6rem; /*adds large padding*/
+    display: flex; /*uses flex layout*/
+    align-items: center; /*centers items vertically*/
+    position: relative; /*sets positioning context*/
+    overflow: hidden; /*hides overflow content*/
+}
+
+/*style for image inside overview*/
+#ov img{ 
+    width: 45rem; /*sets image width*/
+    height: auto; /*keeps aspect ratio*/
+}
+
+/*text section inside overview*/
+#ov_txt{ 
+    padding: 2rem; /*adds padding around text*/
+}
+
+/*heading style for page sections*/
+.pg h1{ 
+    padding:5rem; /*adds top and bottom padding*/
+    padding-left: 5rem; /*adds left padding*/
+    margin: 0; /*removes default margin*/
+} 
+
+/*main section styling*/
+.main{ 
+    display: flex; /*uses flex layout*/
+    overflow: hidden; /*hides overflow content*/
+} 
+
+/*image inside main section*/
+.main img{ 
+    padding-left: 15rem; /*adds left spacing*/
+    margin-top: -2rem; /*raises image position*/
+} 
+
+/*heading inside main*/
+.main h2{ 
+    padding: 4rem; /*adds padding around heading*/
+} 
+
+/*paragraph inside main*/
+.main p{ 
+    padding: 5rem; /*adds padding around text*/
+    margin-top: -9rem; /*pulls paragraph up*/
+    text-align: left; /*aligns text to the left*/
+} 
+
+/*subsection container*/
+.sub{ 
+    max-width: 30rem; /*limits width*/
+    align-items: center; /*centers items vertically*/
+    justify-content: center; /*centers items horizontally*/
+}
+
+/*heading inside sub*/
+.sub h2{ 
+    text-align: center; /*centers heading*/
+} 
+
+ /*flex container for columns*/
+.col{
+    display: flex; /*uses flex layout*/
+    flex-wrap: wrap; /*allows wrapping to new lines*/
+    justify-content: center; /*centers content*/
+    gap: 3rem; /*adds spacing between items*/
+    padding-top: 4rem; /*adds top padding*/
+} 
+
+/*custom id for spacing element*/
+#space{ 
+    padding-bottom: 3rem; /*adds bottom padding*/
+}
+
+/*top part of footer*/
+#top_ft{ 
+    display: flex; /*uses flex layout*/
+    align-items: flex-start;  /*aligns items at top*/
+    justify-content: space-around; /*evenly spaces columns*/
+    gap: 5rem; /*adds space between columns*/
+    background-color: rgba(0, 0, 0, 0.915); /*sets background*/
+    color: rgb(205, 204, 204);  /*sets text color*/
+    padding: 3rem; /*adds padding around footer*/
+} 
+
+/*style for footer links*/
+#top_ft a{
+    text-decoration: none; /*removes underline*/
+    color: rgb(205, 204, 204);  /*matches text color*/
+} 
+
+/*footer list items*/
+#top_ft li{
+    list-style: none; /*removes bullet points*/
+    line-height: 2rem; /*adds vertical spacing*/
+    text-align: left; /*aligns text left*/
+} 
+
+/*unordered lists in footer*/
+#top_ft ul{ 
+    padding: 0; /*removes padding*/
+    margin: 0; /*removes margin*/
+} 
+
+/*bottom part of footer*/
+#dwn_ft{ 
+    text-align: center; /*centers text*/
+    padding: 0.3rem; /*adds small padding*/
+    background-color: rgba(0, 0, 0, 0.816); /*sets background*/
+    font-size: 0.9rem;  /*small text size*/
+    color: rgb(153, 153, 153); /*sets text color*/
+} 
+
+/*style for back to top button*/
+.to-top{ 
+    position: fixed; /*keeps it in place on screen*/
+    bottom: 2rem; /*distance from bottom*/
+    right: 2rem; /*distance from right*/
+    padding: 0.4rem 1rem; /*adds padding inside button*/
+    border-radius: 1rem; /*rounds the edges*/
+    background-color: rgba(249, 249, 249, 0.764); /*semi-transparent background*/
+    color: rgb(0, 0, 0); /*sets text color*/
+    font-weight: bolder; /*extra bold text*/
+    font-size: large; /*large font size*/
+    text-decoration: none; /*removes underline*/
+}
+
+/*media query for screens below 900px*/
+@media screen and (max-width: 900px){ 
+
+    /*adjusts header layout*/
+    header{ 
+        flex-direction: column; /*stacks items vertically*/
+        align-items: center; /*centers items*/
+        justify-content: center; /*centers content*/
+    } 
+
+    /*adjusts logo spacing*/
+    .logo_img{ 
+        padding: 1rem; /*adds padding around logo*/
+    } 
+    nav{ /*adjusts nav container*/
+        text-align: center; /*centers text*/
+        padding:1rem; /*adds padding*/
+    } 
+
+    /*adjusts nav list*/
+    nav ul{
+        flex-direction: row; /*keeps items in row*/
+        gap: 0.5rem;  /*reduces space between items*/
+        padding-left: 0; /*removes padding*/
+        margin-top: 0.5rem; /*adds small margin*/
+    } 
+
+    /*adjusts overview section*/
+    #ov{ 
+        display:flex; /*flex layout*/
+        flex-wrap: wrap; /*allows items to wrap*/
+        align-items: center; /*centers items*/
+        text-align: center; /*centers text*/
+        justify-content: center; /*centers items horizontally*/
+    } 
+
+    /*resizes overview image*/
+    #ov img{ 
+        width: 25rem; /*smaller width*/
+        height: 15rem; /*fixed height*/
+        margin-left: 1rem; /*adds left margin*/
+    } 
+
+    /*adjusts page heading*/
+    .pg h1{ 
+        font-size: 2.5rem; /*smaller font size*/
+        padding: 5rem 0; /*adjusted padding*/
+    } 
+
+    /*adjusts main text and headings*/
+    .main p , .main h2{ 
+        padding: 5rem 0 ; /*top and bottom padding*/
+    } 
+
+    /*adjusts main container*/
+    .main{ 
+        justify-content: center; /*centers items*/
+        display: block; /*block layout*/
+        align-items: center; /*centers items*/
+        text-align: center; /*centers text*/
+    } 
+
+     /*adjusts main image*/
+    .main img{
+        width: 25rem; /*smaller width*/
+        height: 15rem; /*fixed height*/
+        padding: 0; /*removes padding*/
+        margin: 0; /*removes margin*/
+    }
+
+} /*closes media query at 900px*/
+
+/*start of media query for screens below 600px*/
+@media screen and (max-width: 600px){ 
+
+    /*adjusts padding on page container*/
+    .pg{ 
+        padding: 2rem; /*smaller padding*/
+    } 
+
+    /*adjusts columns*/
+    .col{
+        align-items: center; /*centers items*/
+        text-align: center; /*centers text*/
+        justify-content: center; /*centers columns*/
+    }
+
+    /*adjusts paragraph in sub section*/
+    .sub p{ 
+        flex-wrap: wrap; /*allows text wrapping*/
+    } 
+
+    /*adjusts image in sub section*/
+    .sub img{ 
+        width: 25rem; /*sets image width*/
+        background-size: contain; /*fits image in box*/
+    } 
+
+    /*adjusts footer layout*/
+    #top_ft { 
+        flex-direction: column; /*stacks columns vertically*/
+        padding: 2rem 1rem; /*adjusted padding*/
+        gap: 2rem; /*reduced gap between sections*/
+    } 
+
+} 
+
